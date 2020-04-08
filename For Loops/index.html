@@ -1,0 +1,24 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+
+  <div id="app">
+    <!--  `v-for` for todos is an area in our data object and pulling out text fromr
+      the array -->
+      <ol>
+        <li v-for="todo in todos">
+          {{ todo.text }}
+        </li>
+      </ol>
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>
