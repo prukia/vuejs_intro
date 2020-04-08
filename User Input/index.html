@@ -1,0 +1,23 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+
+  <div id="app">
+    <!--  `v-on` directive for user interaction. which allows event listeners
+      when button is triggered we want to invoke the reverseMessage method-->
+    <p>
+      {{ message }}
+    </p>
+    <button v-on:click="reverseMessage">Reverse Message</button>
+  </div>
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>
